@@ -238,7 +238,7 @@ void loadTimeTable() {
 	//load files
 	java.io.File folder = new java.io.File(dataPath(TIMETABLES_PATH));
 	java.io.FilenameFilter csvFilter = new java.io.FilenameFilter() {
-  		public boolean accept(File dir, String name) {
+  		public boolean accept(java.io.File dir, String name) {
     		return name.toLowerCase().endsWith(".csv");
   		}
 	};
